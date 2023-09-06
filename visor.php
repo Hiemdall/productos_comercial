@@ -26,6 +26,7 @@
                 echo '<div class="product-card">';
                 echo '<img src="./imagenes_productos/productos/' . $row["logo"] . '" alt="Logo del producto" style="width: 70px; height: 70px;">';
                 echo '<div class="carrusel">';
+<<<<<<< HEAD
                 echo '<div class="img"><img src="./imagenes_productos/productos/' . $row["imagen1"] . '"></div>';
                 echo '<div><img src="./imagenes_productos/productos/' . $row["imagen2"] . '"></div>';
                 echo '<div><img src="./imagenes_productos/productos/' . $row["imagen3"] . '"></div>';
@@ -38,6 +39,16 @@
                 echo '<li>Precio: ' . $row["pn"] . '</li>';
                 echo '<li>Precio: ' . $row["cantidad"] . '</li>';
                 echo '<li>Precio: ' . $row["costo"] . '</li>';
+=======
+                echo '<div><img src="./imagenes_productos/productos/' . $row["imagen1"] . '"></div>';
+                echo '<div><img src="./imagenes_productos/productos/' . $row["imagen2"] . '"></div>';
+                echo '<div><img src="./imagenes_productos/productos/' . $row["imagen3"] . '"></div>';
+                echo '</div>';
+                echo '<h2>' . $row["nombre"] . '</h2>';
+                echo '<ul>';
+                echo '<li>Descripción: ' . $row["descripcion"] . '</li>';
+                echo '<li>Precio: ' . $row["precio"] . ' Pesos</li>';
+>>>>>>> 2fe9e86f2b3eb6c914b58690cc0276a8f6d97799
                 // Agrega aquí más detalles del producto si los tienes en la base de datos
                 echo '</ul>';
                 echo '</div>';
@@ -46,6 +57,7 @@
             echo 'No se encontraron productos.';
         }
 
+<<<<<<< HEAD
         
         // Verificar la conexión
         if ($conn->connect_error) {
@@ -71,6 +83,10 @@
         $conn->close();
         ?>
     
+=======
+        $conn->close();
+        ?>
+>>>>>>> 2fe9e86f2b3eb6c914b58690cc0276a8f6d97799
     </div>
     <script>
         $(document).ready(function(){
@@ -85,6 +101,7 @@
         });
     </script>
     <footer>
+<<<<<<< HEAD
 
 
 
@@ -93,6 +110,9 @@
 
 
 
+=======
+        <span>Actualizado <a>21/03/2023</a></span>
+>>>>>>> 2fe9e86f2b3eb6c914b58690cc0276a8f6d97799
         <br>
         <span>Created By <a href="https://www.integratic.com.co">Integratic</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
     </footer>
