@@ -1,0 +1,77 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Encabezado */
+h1 {
+  font-size: 24px;
+  text-align: center;
+  color: rgb(13, 75, 133);
+}
+
+/* Lista de productos */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Tarjeta de producto */
+.product-card {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.product-card .img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.product-card h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.product-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.product-card ul li {
+  margin-bottom: 5px;
+}
+
+/* Media queries para hacerlo receptivo */
+@media screen and (max-width: 768px) {
+  .product-list {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      gap: 10px;
+  }
+
+  .product-card {
+      padding: 10px;
+  }
+}
+
+/* Otras reglas de medios adicionales para dispositivos más pequeños si es necesario */
+
