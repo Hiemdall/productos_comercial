@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Productos</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <h1>Agregar Nuevo Producto</h1>
+    
+    <form id="agregar-form" enctype="multipart/form-data" method="post" action="agregar_producto.php">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required>
+        
+        <label for="descripcion">Descripción:</label>
+        <textarea name="descripcion" rows="4" required></textarea>
+        
+        <label for="precio">Precio:</label>
+        <input type="number" name="precio" step="0.01" required>
+        
+        <label for="logo">Logo de la Marca:</label>
+        <input type="file" name="logo" accept="image/*" required>
+        
+        <label for="imagen1">Imagen del Producto 1:</label>
+        <input type="file" name="imagen1" accept="image/*" required>
+        
+        <label for="imagen2">Imagen del Producto 2:</label>
+        <input type="file" name="imagen2" accept="image/*" required>
+        
+        <label for="imagen3">Imagen del Producto 3:</label>
+        <input type="file" name="imagen3" accept="image/*" required>
+        
+        <button type="submit">Agregar Producto</button>
+    </form>
+     <!-- Agregar el botón para redireccionar -->
+     <a href="visor.php"><button>Ir al Visor</button></a>
+</body>
+</html>
